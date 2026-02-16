@@ -1,0 +1,16 @@
+Bridge mqtt:broker:mosquitto "Mosquitto" [ host="mosquitto", port=1883, secure=false ] {
+    Thing topic mqtt_sensors "MQTT Sensors" {
+        Channels:
+            // Зверни увагу на stateTopic — він має бути ТАКИМ ЖЕ, як у MQTT Explorer
+            Type number : temp "Temperature" [ stateTopic="office/sensor/temp" ]
+            Type number : hum  "Humidity"    [ stateTopic="office/sensor/hum" ]
+            Type switch : relay "Relay"      [ stateTopic="office/relay/state", commandTopic="office/relay/cmd" ]
+    }
+
+    Thing topic zigbee_devices "Zigbee Devices" {
+        Channels:
+            Type switch : zb_light "Light"   [ stateTopic="zigbee/light/state", commandTopic="zigbee/light/set" ]
+            Type contact : zb_door "Door"    [ stateTopic="zigbee/door/status" ]
+            Type number : zb_batt "Battery"  [ stateTopic="zigbee/door/battery" ]
+    }
+}

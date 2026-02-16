@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  openhab:
+    image: openhab/openhab:latest
+    container_name: openhab
+    ports:
+      - "8080:8080"
+      - "8443:8443"
+    volumes:
+      - ./conf:/openhab/conf
+      - ./userdata:/openhab/userdata
+      - ./addons:/openhab/addons
+    environment:
+      - CRYPTO_POLICY=unlimited
+    restart: always
+    depends_on:
+      - mosquitto
+
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: mosquitto
+    user: "1883:1883" 
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+    restart: always

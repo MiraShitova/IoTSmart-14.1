@@ -1,0 +1,9 @@
+// MQTT Items
+Number Room_Temp "Температура [%.1f °C]" <temperature> { channel="mqtt:topic:mosquitto:mqtt_sensors:temp" }
+Number Room_Hum  "Вологість [%d %%]" <humidity> { channel="mqtt:topic:mosquitto:mqtt_sensors:hum" }
+Switch Room_Relay "Реле" <switch> { channel="mqtt:topic:mosquitto:mqtt_sensors:relay" }
+
+// Zigbee Items
+Switch Zigbee_Light "Лампа Zigbee" <light> { channel="mqtt:topic:mosquitto:zigbee_devices:zb_light" }
+Contact Zigbee_Door "Датчик дверей [%s]" <door> { channel="mqtt:topic:mosquitto:zigbee_devices:zb_door" }
+Number Zigbee_Batt "Заряд батареї [%d %%]" <battery> { channel="mqtt:topic:mosquitto:zigbee_devices:zb_batt" }
