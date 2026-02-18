@@ -1,0 +1,32 @@
+Group gGridNodes "Усі вузли"
+
+Number gTotalLoad "Сумарне навантаження [%.2f kW]"
+Number gAvgVoltage "Середня напруга [%.1f V]"
+
+// ВУЗЛИ (5 точок)
+Number Node1_Power "Вузол 1: Потужність [%.2f kW]" (gGridNodes)
+Number Node1_Voltage "Вузол 1: Напруга [%.1f V]" (gGridNodes)
+Switch Node1_Status "Вузол 1: Стан"
+
+Number Node2_Power "Вузол 2: Потужність [%.2f kW]" (gGridNodes)
+Number Node2_Voltage "Вузол 2: Напруга [%.1f V]" (gGridNodes)
+Switch Node2_Status "Вузол 2: Стан"
+
+Number Node3_Power "Вузол 3: Потужність [%.2f kW]" (gGridNodes)
+Number Node3_Voltage "Вузол 3: Напруга [%.1f V]" (gGridNodes)
+Switch Node3_Status "Вузол 3: Стан"
+
+Number Node4_Power "Вузол 4: Потужність [%.2f kW]" (gGridNodes)
+Number Node4_Voltage "Вузол 4: Напруга [%.1f V]" (gGridNodes)
+Switch Node4_Status "Вузол 4: Стан"
+
+Number Node5_Power "Вузол 5: Потужність [%.2f kW]" (gGridNodes)
+Number Node5_Voltage "Вузол 5: Напруга [%.1f V]" (gGridNodes)
+Switch Node5_Status "Вузол 5: Стан"
+
+// СИСТЕМНІ ПАРАМЕТРИ
+Number Grid_Frequency "Частота [%.2f Hz]"
+String Grid_Stability_State "Стан мережі [%s]"
+Number Grid_Threshold "Ліміт навантаження [%.1f kW]"
+String Grid_Alert_Message "Сповіщення [%s]"
+Switch Emergency_Shutdown "Аварійний стоп"

@@ -128,6 +128,156 @@
           "redirectUri": "http://localhost:8080",
           "scope": "admin",
           "sessionCookie": true
+        },
+        {
+          "sessionId": "00b02e67-6523-474b-bbca-46a715aa011d",
+          "refreshToken": "62a8f6dd3f544d898ce4c252ff84cf2b",
+          "createdTime": "Feb 17, 2026, 12:12:26 PM",
+          "lastRefreshTime": "Feb 17, 2026, 12:12:56 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        },
+        {
+          "sessionId": "316c60c6-c424-42a3-bf0b-83220bd1f80f",
+          "refreshToken": "6cf46b630dd54d07888d059cd7cefbb6",
+          "createdTime": "Feb 17, 2026, 12:32:39 PM",
+          "lastRefreshTime": "Feb 17, 2026, 12:39:45 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        },
+        {
+          "sessionId": "e9069c36-f521-41ea-838b-bcb52ccc22b9",
+          "refreshToken": "ac717a7ae2c747fda96e927eb68bed5b",
+          "createdTime": "Feb 17, 2026, 12:44:05 PM",
+          "lastRefreshTime": "Feb 17, 2026, 12:44:05 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        },
+        {
+          "sessionId": "39476553-347d-4d9c-b074-d5b62b74a85a",
+          "refreshToken": "dfe455d3d5a845bfbda2b2350d9188cb",
+          "createdTime": "Feb 17, 2026, 12:48:22 PM",
+          "lastRefreshTime": "Feb 17, 2026, 1:17:14 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        },
+        {
+          "sessionId": "1abc6dc1-74f4-4fe3-b301-e1e1ec31a1ea",
+          "refreshToken": "78daed705198437b9dfc9d4ff346b75a",
+          "createdTime": "Feb 17, 2026, 1:23:33 PM",
+          "lastRefreshTime": "Feb 17, 2026, 1:23:33 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        },
+        {
+          "sessionId": "4b183561-2755-443a-935a-9b9fc7b3a977",
+          "refreshToken": "e16c7c24391a4ae188db3b9e84f69c55",
+          "createdTime": "Feb 17, 2026, 1:40:27 PM",
+          "lastRefreshTime": "Feb 17, 2026, 4:11:52 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        },
+        {
+          "sessionId": "ba0980f8-e49e-407b-b0d5-5b7730465f26",
+          "refreshToken": "ad0e9fc20c1a40a4bd03e5c4e58919e1",
+          "createdTime": "Feb 17, 2026, 4:28:02 PM",
+          "lastRefreshTime": "Feb 17, 2026, 4:35:53 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        },
+        {
+          "sessionId": "bd41b1e3-48a7-4480-a959-0ca06555762d",
+          "refreshToken": "135576570bc14efe9802c06f95211059",
+          "createdTime": "Feb 18, 2026, 3:41:05 PM",
+          "lastRefreshTime": "Feb 18, 2026, 3:46:18 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        },
+        {
+          "sessionId": "fb14fe76-87b8-4568-806f-7bc8cebad56d",
+          "refreshToken": "75cc31f9a6684c65a5bdafb09b4eefd6",
+          "createdTime": "Feb 18, 2026, 4:00:44 PM",
+          "lastRefreshTime": "Feb 18, 2026, 4:00:44 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        },
+        {
+          "sessionId": "e0e4d124-6b70-4e1d-8995-1a4e9b346af0",
+          "refreshToken": "425f015d5f7b4ff483ee4a5cafe22c00",
+          "createdTime": "Feb 18, 2026, 4:07:30 PM",
+          "lastRefreshTime": "Feb 18, 2026, 4:07:30 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        },
+        {
+          "sessionId": "9c3cef94-d902-461a-be2d-e2329066474a",
+          "refreshToken": "02b0d4fdad84449da7f91a7ee123fb1e",
+          "createdTime": "Feb 18, 2026, 4:11:40 PM",
+          "lastRefreshTime": "Feb 18, 2026, 4:11:40 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        },
+        {
+          "sessionId": "94b05a8a-104c-4816-baf2-04bc15eafb7a",
+          "refreshToken": "9aba73bece5445409d1ac7db24ca98f5",
+          "createdTime": "Feb 18, 2026, 4:22:37 PM",
+          "lastRefreshTime": "Feb 18, 2026, 4:22:37 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        },
+        {
+          "sessionId": "89d00c03-72c4-41dd-8328-07a46b6db2de",
+          "refreshToken": "918804e675b741afaedc4d0b9703ee6c",
+          "createdTime": "Feb 18, 2026, 4:26:38 PM",
+          "lastRefreshTime": "Feb 18, 2026, 4:38:59 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        },
+        {
+          "sessionId": "2acd4355-d955-47d5-98e8-ce386d2c6892",
+          "refreshToken": "97eaacdcc49c40fa966bfc7496756d06",
+          "createdTime": "Feb 18, 2026, 4:45:09 PM",
+          "lastRefreshTime": "Feb 18, 2026, 5:00:48 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        },
+        {
+          "sessionId": "ce73eaa0-4ae5-4f60-9ab1-ffe71ee5cb50",
+          "refreshToken": "272630bb1c574fd8a55e97251e4ee474",
+          "createdTime": "Feb 18, 2026, 5:20:50 PM",
+          "lastRefreshTime": "Feb 18, 2026, 6:09:11 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
         }
       ],
       "apiTokens": []

@@ -1,37 +1,32 @@
-# Multi-protocol IoT Gateway (OpenHAB + MQTT + Zigbee)
+# Smart Grid Analytics: Real-time IoT Stream Processing
 
-Даний проект реалізує **Варіант 1**: Створення мультипротокольного шлюзу на базі OpenHAB. Система об'єднує пристрої, що працюють за протоколами **MQTT** та **Zigbee**, у єдину екосистему.
+## Огляд проекту
+Цей проект реалізує систему інтелектуального моніторингу електромережі (Smart Grid) на базі **OpenHAB 4**. Система використовує Complex Event Processing (CEP) для аналізу потокових даних у реальному часі та автоматичного керування споживанням.
 
-## Технологічний стек
-* **Docker & Docker Compose**: Контейнеризація сервісів.
-* **OpenHAB 5.1**: Центральний сервер автоматизації.
-* **Eclipse Mosquitto**: MQTT брокер для обміну повідомленнями.
-* **MQTT Explorer**: Інструмент для емуляції датчиків та тестування.
+## Архітектура системи
+Проект побудований на архітектурі стрім-процесингу:
+- **Stream Sources**: 5 вузлів енергоспоживання (Node 1-5), що генерують дані кожні 5 секунд.
+- **Processing Engine**: GraalJS (JavaScript) Rule Engine в OpenHAB.
+- **Analytics Layer**: CEP-логіка для виявлення пікових навантажень та відхилень частоти.
 
-## Реалізований функціонал
-1. **Моніторинг (MQTT)**: Температура та вологість у реальному часі.
-2. **Безпека (Zigbee)**: Датчик стану дверей та контроль рівня заряду батареї.
-3. **Крос-протокольна автоматизація**: При відкритті дверей (Zigbee) автоматично вмикається реле (MQTT).
-4. **Графічний інтерфейс**: Basic UI для візуалізації та ручного керування.
 
-## Архітектура системи (Mermaid)
 
-```mermaid
-graph TD
-    subgraph "External Devices (Emulated)"
-        Z[Zigbee Door Sensor] -- "Zigbee Protocol" --> M
-        T[MQTT Temp/Hum Sensor] -- "MQTT Protocol" --> M
-    end
+## Алгоритм Demand-Response (Load Shedding)
+Система автоматично балансує навантаження за наступним алгоритмом:
+1. Агрегація потужності ($\sum P_{nodes}$) у реальному часі.
+2. Порівняння зі встановленим порогом (`Grid_Threshold`).
+3. При перевищенні ліміту активується сценарій **Load Shedding**:
+   - **Пріоритет 1 (Critical)**: Вузол 1 (Лікарня) — ніколи не вимикається.
+   - **Пріоритет 3 (Non-essential)**: Вузол 5 (Освітлення) — вимикається першим.
 
-    subgraph "Docker Infrastructure"
-        M[Eclipse Mosquitto Broker] <--> OH[OpenHAB 5.1 Core]
-    end
+## Критерії стабільності мережі
+Система вважається стабільною при дотриманні наступних умов:
+- **Частота**: $$49.5\,Hz \le f \le 50.5\,Hz$$
+- **Напруга**: $$207\,V \le V \le 253\,V$$
 
-    subgraph "User Interface"
-        OH --> BUI[Basic UI / Sitemap]
-        OH --> REST[REST API Documentation]
-    end
+Будь-яке виходження за ці межі ініціює зміну стану на `WARNING` або `CRITICAL`.
 
-    subgraph "Automation Logic"
-        OH -- "Rules Engine" --> R[Zigbee -> MQTT Transformation]
-    end
+## Аварійні процедури (Emergency Procedures)
+- **Manual Shutdown**: Можливість миттєвого знеструмлення всіх вузлів кнопкою "STOP!".
+- **Cascade Failure Prevention**: Автоматичне вимкнення при критичному падінні частоти ($<49.0\,Hz$).
+- **Recovery Sequencing**: Поступове відновлення живлення після стабілізації параметрів через команду Reset.

@@ -1,0 +1,20 @@
+sitemap grid {
+    Frame label="Моніторинг мережі" {
+        Text item=gTotalLoad valuecolor=[>40="red", >30="orange", <=30="green"]
+        Text item=Grid_Stability_State
+        Text item=Grid_Alert_Message icon="error"
+    }
+
+    Frame label="Вузли споживання" {
+        Default item=Node1_Power
+        Default item=Node2_Power
+        Default item=Node3_Power
+        Default item=Node4_Power
+        Default item=Node5_Power label="Вузол 5 (Освітлення)"
+    }
+
+    Frame label="Керування" {
+        Setpoint item=Grid_Threshold label="Встановити ліміт [%.1f kW]" minValue=10 maxValue=100 step=5
+        Switch item=Emergency_Shutdown label="АВАРІЙНЕ ВІДКЛЮЧЕННЯ" mappings=[ON="STOP!", OFF="RESET"]        
+    }
+}
