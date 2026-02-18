@@ -15,4 +15,4 @@ graph TD
         OpenHAB -->|Persistence| LocalDB[(rrd4j / MapDB)]
         OpenHAB -->|UI| Dashboard[Edge Dashboard]
     end
-    Cloud((Cloud))-.-X|BLOCK|Local_Network
+    Cloud((Cloud)) --x |BLOCK| Local_Network
