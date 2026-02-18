@@ -1,0 +1,10 @@
+String Edge_System_Status "Статус системи [%s]" <network>
+Number Edge_CPU_Load "Навантаження CPU [%.1f %%]" <chart>
+Number Edge_RAM_Usage "Використання пам'яті [%.1f MB]" <chart>
+
+Switch Local_Light "Локальне світло" <light>
+Switch Local_Motion "Датчик руху (Edge-емуляція)" <motion>
+Number Local_Temperature "Температура приміщення [%.1f °C]" <temperature>
+
+
+Switch Offline_Storage_Sync "Синхронізація локальної БД" <storage>

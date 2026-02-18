@@ -1,0 +1,17 @@
+sitemap edge {
+    Frame label="Моніторинг Edge-вузла" {
+        Text item=Edge_System_Status
+        Text item=Edge_CPU_Load
+        Text item=Edge_RAM_Usage
+    }
+    
+    Frame label="Локальна автоматизація" {
+        Switch item=Local_Motion
+        Switch item=Local_Light
+        Text item=Local_Temperature
+    }
+
+    Frame label="Налаштування автономності" {
+        Switch item=Offline_Storage_Sync
+    }
+}

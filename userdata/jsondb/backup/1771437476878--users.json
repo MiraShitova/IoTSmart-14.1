@@ -263,7 +263,27 @@
           "sessionId": "2acd4355-d955-47d5-98e8-ce386d2c6892",
           "refreshToken": "97eaacdcc49c40fa966bfc7496756d06",
           "createdTime": "Feb 18, 2026, 4:45:09 PM",
-          "lastRefreshTime": "Feb 18, 2026, 4:49:53 PM",
+          "lastRefreshTime": "Feb 18, 2026, 5:00:48 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        },
+        {
+          "sessionId": "ce73eaa0-4ae5-4f60-9ab1-ffe71ee5cb50",
+          "refreshToken": "272630bb1c574fd8a55e97251e4ee474",
+          "createdTime": "Feb 18, 2026, 5:20:50 PM",
+          "lastRefreshTime": "Feb 18, 2026, 6:09:11 PM",
+          "clientId": "http://localhost:8080",
+          "redirectUri": "http://localhost:8080",
+          "scope": "admin",
+          "sessionCookie": true
+        },
+        {
+          "sessionId": "0adb0f96-2a04-49f3-886a-865f60eb9e92",
+          "refreshToken": "72a4e0febacc4f9d82edaf8353ae7be9",
+          "createdTime": "Feb 18, 2026, 7:57:56 PM",
+          "lastRefreshTime": "Feb 18, 2026, 7:57:56 PM",
           "clientId": "http://localhost:8080",
           "redirectUri": "http://localhost:8080",
           "scope": "admin",
